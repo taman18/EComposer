@@ -23,19 +23,19 @@ const customerReviewSlice = createSlice({
   initialState,
   reducers: {
     addReview: (state, action: PayloadAction<Review>) => {
-      state.reviews.push(action.payload);
+      state?.reviews.push(action?.payload);
     },
     removeReview: (state, action: PayloadAction<number>) => {
-      state.reviews = state.reviews.filter((review) => review.id !== action.payload);
+      state.reviews = state?.reviews.filter((review) => review?.id !== action?.payload);
     },
     updateReview: (state, action: PayloadAction<Review>) => {
-      const index = state.reviews.findIndex((review) => review.id === action.payload.id);
+      const index = state?.reviews?.findIndex((review) => review?.id === action?.payload?.id);
       if (index !== -1) {
-        state.reviews[index] = action.payload;
+        state.reviews[index] = action?.payload;
       }
     },
   },
 });
 
-export const { addReview, removeReview, updateReview } = customerReviewSlice.actions;
-export default customerReviewSlice.reducer;
+export const { addReview, removeReview, updateReview } = customerReviewSlice?.actions;
+export default customerReviewSlice?.reducer;

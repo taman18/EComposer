@@ -7,7 +7,7 @@ const TrackingReturnCard: React.FC<TrackingReturnCardProps> = ({
 }) => {
   return (
     <section className="flex justify-center flex-wrap  relative z-10 mt-[-150px]">
-      {customerSupportOptions.map((item) => (
+      {customerSupportOptions?.map((item) => (
         <div
          data-aos="fade-up"
           key={item.id}
@@ -21,8 +21,8 @@ const TrackingReturnCard: React.FC<TrackingReturnCardProps> = ({
           <h2 className="pt-4 pb-2 text-[#3F3F3F] text-xl font-normal">
             {item.title}
           </h2>
-          <p className="pb-4 text-[#848484] text-center">{item.description}</p>
-          <Button text={item.actionText} />
+          <p className="pb-4 text-[#848484] text-center">{item?.description}</p>
+          <Button text={item?.actionText} />
         </div>
       ))}
     </section>

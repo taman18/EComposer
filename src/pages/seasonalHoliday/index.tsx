@@ -9,7 +9,6 @@ import CustomBraceletDesigns from "./components/customBraceletDesigns";
 import { CUSTOMER_REVIEW, PERSONALIZED_REVIEW } from "../../utils/mockData";
 import DadGiftRecommendations from "./components/dadGiftRecommendations/DadGiftRecommendations";
 const Main: React.FC = () => {
-
   return (
     <>
       <LandingImageSection

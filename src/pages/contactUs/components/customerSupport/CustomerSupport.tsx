@@ -12,7 +12,7 @@ const CustomerSupport: React.FC<CustomerSupportProps> = ({
         Weekends: 6am to 6pm PT.
       </p>
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 border md:p-10 p-0 rounded-2xl min-w-[300px] w-full py-5" data-aos="fade-up">
-        {contactOptions.map((item, index) => (
+        {contactOptions?.map((item, index) => (
           <div
             key={item.id}
             className={`flex flex-col items-center md:px-10

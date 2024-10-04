@@ -5,8 +5,6 @@ import { IoMdHeart } from "react-icons/io";
 import QuantitySelector from "./QuantitySelector";
 import { BraceletCustomizerProps } from "./BraceletCustomizerWithDetails.types";
 
-
-
 const BraceletCustomizerWithDetails: React.FC<BraceletCustomizerProps> = ({
   ratingCount,
   productTitle,

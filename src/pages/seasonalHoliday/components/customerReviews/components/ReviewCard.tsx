@@ -16,7 +16,7 @@ const ReviewCard: React.FC = () => {
   const reviews = useSelector((state: RootState) => state.reviews.reviews);
   return (
     <>
-      {reviews.map(({ id, image, name, review }: Review) => (
+      {reviews?.map(({ id, image, name, review }: Review) => (
         <div
           key={id}
           className="p-2 m-2 rounded-xl flex flex-col bg-[#f4f7ff] h-fit"

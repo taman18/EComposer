@@ -8,15 +8,15 @@ const FeatureDetails: React.FC = () => {
         <div className="flex flex-col md:flex-row  md:justify-between gap-2">
           <div className="flex-1 ">
             <div className="grid grid-cols-1 gap-6">
-              {ITEM_SPECIFICATION.slice(0, 2).map((item) => (
-                <div key={item.id} className="flex md:flex-row flex-col md:items-start  items-center">
-                  <img src={item.icon} alt={item.title} className="py-12  w-[72px] max-h-[168px]" />
+              {ITEM_SPECIFICATION?.slice(0, 2).map((item) => (
+                <div key={item?.id} className="flex md:flex-row flex-col md:items-start  items-center">
+                  <img src={item.icon} alt={item?.title} className="py-12  w-[72px] max-h-[168px]" />
                   <div className="md:p-10">
                     <h1 className="text-xl font-medium mb-2 text-[#FFFFFF] md:text-left text-center">
-                      {item.title}
+                      {item?.title}
                     </h1>
                     <p className="text-[#FFFFFF] text-wrap  font-normal text-sm md:text-left text-center">
-                      {item.description}
+                      {item?.description}
                     </p>
                   </div>
                 </div>
@@ -35,15 +35,15 @@ const FeatureDetails: React.FC = () => {
 
           <div className="flex-1">
             <div className="grid grid-cols-1 gap-2">
-              {ITEM_SPECIFICATION.slice(2).map((item) => (
+              {ITEM_SPECIFICATION.slice(2)?.map((item) => (
                 <div key={item.id} className="flex md:flex-row flex-col md:items-start  items-center">
-                  <img src={item.icon} alt={item.title} className="py-12 w-[72px] max-h-[168px]" />
+                  <img src={item?.icon} alt={item?.title} className="py-12 w-[72px] max-h-[168px]" />
                   <div className="md:p-10">
                     <h1 className="text-xl font-medium mb-2 text-[#FFFFFF] md:text-left text-center">
-                      {item.title}
+                      {item?.title}
                     </h1>
                     <p className=" text-[#FFFFFF] font-normal text-sm md:text-left text-center">
-                      {item.description}
+                      {item?.description}
                     </p>
                   </div>
                 </div>

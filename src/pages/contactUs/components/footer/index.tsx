@@ -16,9 +16,9 @@ const Footer: React.FC = () => {
         <div className="md:col-span-5 lg:col-span-2">
           <ContactFooter links={FOOTER_INFO} />
         </div>
-        {FOOTER_SECTION.map((section) => (
+        {FOOTER_SECTION?.map((section) => (
           <div key={section.id} className="md:col-span-2 lg:col-span-1">
-            <FooterLinks links={section.links} sectionTitle={section.title} />
+            <FooterLinks links={section?.links} sectionTitle={section?.title} />
           </div>
         ))}
       </section>

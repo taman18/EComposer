@@ -10,5 +10,5 @@ const dadGiftSlice = createSlice({
   },
 });
 
-export const selectDadGifts = (state: { dadGifts: { items: any[] } }) => state.dadGifts.items;
-export default dadGiftSlice.reducer;
+export const selectDadGifts = (state: { dadGifts: { items: any[] } }) => state.dadGifts?.items;
+export default dadGiftSlice?.reducer;

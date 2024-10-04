@@ -24,9 +24,9 @@ const TopSearchedQuestions: React.FC<TopSearchedQuestionsProps> = ({
             <FAQItem 
               key={faq.id} 
               faq={faq} 
-              isActive={activeQuestionId === faq.id} 
+              isActive={activeQuestionId === faq?.id} 
               onToggle={toggleAnswer} 
-              isLastItem={index === faqData.length - 1} 
+              isLastItem={index === faqData?.length - 1} 
             />
           ))}
         </div>
@@ -49,7 +49,7 @@ const FAQItem: React.FC<{
         aria-expanded={isActive}
       >
         <span className="text-gray-600 font-medium text-lg">
-          {faq.question}
+          {faq?.question}
         </span>
         <div className="flex items-center justify-center w-8 h-8 transition-colors duration-200 group-hover:bg-[#E0E0FF] rounded-3xl p-6">
           <ExpandableArrow arrowType={isActive ? "collapse" : "expand"} />
@@ -57,7 +57,7 @@ const FAQItem: React.FC<{
       </button>
       {isActive && (
         <div className="text-[#424242] mt-2 max-w-[1200px] transition-all duration-300 ease-in-out">
-          {faq.answer}
+          {faq?.answer}
         </div>
       )}
     </div>

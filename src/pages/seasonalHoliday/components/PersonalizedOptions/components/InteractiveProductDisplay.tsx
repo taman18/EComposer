@@ -20,7 +20,7 @@ const InteractiveProductDisplay: React.FC<InteractiveProductDisplayProps> = ({
       <div className="md:px-20 px-10">
         <div className="flex flex-col md:flex-row gap-4 flex-col-reverse">
           <div className="flex md:flex-col flex-row gap-3 relative">
-            {images.slice(0, showFifthImage ? 5 : 4).map((image, index) => (
+            {images?.slice(0, showFifthImage ? 5 : 4)?.map((image, index) => (
               <img
                 key={index}
                 src={image}
