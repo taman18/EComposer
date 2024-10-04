@@ -117,7 +117,7 @@ Ensure you have the following installed:
 - **TypeScript**: A strongly-typed superset of JavaScript that enhances code quality, scalability, and maintainability.
 - **Material UI**: A modern React UI framework providing pre-built, customizable, and accessible components.
 - **Redux Toolkit**: A state management tool used to manage application state efficiently, specifically in the **Seasonal Holiday Page**.
-- **React Routing**: Used for handling navigation between different components/pages, implemented in the **Contact Us Page**.
+- **React Routing**: Used for handling navigation between different pages
 
 ## 📱 Progressive Web App (PWA)
 
