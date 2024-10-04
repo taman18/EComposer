@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { DAD_GIFT_IMG } from '../utils/mockData';
+import { DAD_GIFT_IMG } from '../../utils/mockData';
 
 const dadGiftSlice = createSlice({
   name: 'dadGifts',

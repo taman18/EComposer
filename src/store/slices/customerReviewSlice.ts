@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { CUSTOMER_REVIEW } from '../utils/mockData';
+import { CUSTOMER_REVIEW } from '../../utils/mockData';
 
 interface Review {
   id: number;

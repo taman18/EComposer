@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { selectDadGifts } from "../../../../features/dadGiftSlice";
+import { selectDadGifts } from "../../../../store/slices/dadGiftSlice";
 
 const ImageCarousel: React.FC = () => {
   const dadGifts = useSelector(selectDadGifts);

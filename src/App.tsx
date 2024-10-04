@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import { Provider } from "react-redux";
-import store from "./app/store";
+import store from "./store/store";
 
 function App() {
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Stars from "../../../../../components/common/Stars";
-import { RootState } from "../../../../../app/store";
+import { RootState } from "../../../../../store/store";
 
 interface Review {
   id: number;

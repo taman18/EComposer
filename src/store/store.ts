@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import customerReviewSlice from '../features/customerReviewSlice';
-import dadGiftSlice from '../features/dadGiftSlice';
+import customerReviewSlice from './slices/customerReviewSlice';
+import dadGiftSlice from './slices/dadGiftSlice';
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
