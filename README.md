@@ -126,7 +126,6 @@ The **Ecomposer** project is designed as a Progressive Web App (PWA), allowing u
 - **Offline Access**: Users can access content even without an internet connection, thanks to service workers that cache important resources.
 - **Fast Loading Times**: The PWA architecture ensures quick loading times, enhancing the overall user experience.
 - **Home Screen Installation**: Users can add the app to their home screens, enabling easy access with just a tap, similar to native apps.
-- **Push Notifications**: The app can send push notifications to keep users informed about updates, promotions, or new features, encouraging user engagement.
 - **Responsive Design**: The PWA is fully responsive, providing an optimal viewing experience across various devices, from desktops to smartphones.
 
 This PWA implementation enhances user engagement and accessibility, making **Ecomposer** a convenient solution for users to explore seasonal products and connect with the brand.
